@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+  
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #383735d3;
+    position: fixed;
+    width: 1280px;
+    height: 100px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.9);
+    z-index: 1;
+ }
+
+ header span{
+    display: flex;
+    align-items: center;
+    max-width: 1280px;
+ }
+
+header img{
+    height: 70px;
+    padding-right: 90px;
+}
+
+header ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;    
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.435);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+header nav ul li a:hover{
+    color: rgba(252, 252, 252, 0.5);
+}
+
+
+
+.main-banner{
+    background-image: url("https://www.consultoriarr.com.br/wp-content/uploads/2020/01/img-empreender-em-sao-paulo-o-que-voce-precisa-saber-sobre-o-assunto.jpg");
+    position: relative;
+    top: 100px;
+    display :flex;
+    width: 1280px;
+    height: 300px;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 500px 500px 500px 500px rgba(0, 0, 0, 0.563) inset;
+    border-bottom: 5px solid rgba(174, 6, 6, 0.861);
+    margin-bottom: 100px;
+    
+    
+}
+
+.banner-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -150px;
+   
+}
+
+.banner-content h1{
+    font-size: 45px;
+    color: white;
+    opacity: 0.9;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.516);
+    
+}
+
+.banner-content p{
+    font-size: 20px;
+    opacity: 0.9;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.779);
+}
+
+.titulo{
+    font-size: 45px;
+    font-weight: 700;
+    color: #FFF;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.779);
+}
+
+.cards{
+    display: flex;
+    width: 1280px;
+    justify-content: center;
+    background: rgb(47,43,38);
+    background: linear-gradient(90deg, rgba(47,43,38,1) 0%, rgba(97,97,97,1) 50%, rgba(47,43,38,1) 100%);
+    border-bottom: 5px solid rgba(174, 6, 6, 0.861);
+    padding-bottom: 50px;
+    padding-top: 20px;
+    
+
+}
+
+.cards-blocks article{
+    display: flex;
+    flex-direction: column;      
+    color: white;
+    background-color: rgba(0, 0, 0, 0.15);
+    align-items: center;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.9);
+    
+}
+
+.cards-blocks article img{
+    width: 170px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0 40px 0 0;
+}
+
+
+.cards-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;   
+}
+
+.cards-blocks h1{
+    font-size: 35px;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.cards-blocks p{
+    font-size: 7px;
+    width: 150px;
+    margin-bottom: 20px;
+    
+    
+}
+
+.cards-blocks button{
+    padding: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(32, 32, 32);
+    cursor: pointer;
+    width: 50%;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.cards-blocks button:hover{
+    background-color: rgb(231, 220, 220);
+}
+
+
+
+
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1280px;
+    background: rgb(47,43,38);
+    background: linear-gradient(90deg, rgba(47,43,38,1) 0%, rgba(97,97,97,1) 50%, rgba(47,43,38,1) 100%);
+    border-bottom: 5px solid rgba(174, 6, 6, 0.861);
+    padding: 20px;
+    
+}
+
+.video iframe{
+    width: 550px; 
+    height: 300px; 
+    border-radius: 20px;
+    
+}
+
+
+footer{
+    display: flex;
+    width: 1280px;
+    justify-content: space-around;
+    background-color: #000000d3;
+    padding: 50px 0;
+}
+
+footer h1{
+    opacity: 0.8;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+footer div{
+    display: flex;
+    }
+
+footer span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+footer img{
+    width: 50px;
+}
+
+footer div span a{
+    color: #FFF;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+@media(max-width: 425px){
+
+    body{
+        width: 425px;
+    }
+
+    header{
+        width: 100%;
+        height: 200px;
+    }
+
+    header span{
+        flex-direction: column;
+    }
+
+    header span img{
+        margin-bottom: 30px;
+        padding-left: 60px;
+    }
+
+    .main-banner{
+    visibility: hidden;
+    height: 0;    
+    }
+
+    .cards{
+        margin-top: 95px;
+        
+    }
+
+    .cards h1{
+        font-size: 30px;
+    }
+
+    .cards-blocks{
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 50px;
+    }
+
+    .cards-blocks article{
+        width: 170px;
+    }
+
+
+    .video h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .video iframe{
+        width: 400px; 
+        height: 200px;         
+    }
+
+    footer div{
+        flex-direction: column;
+        }
+
+        footer div span{
+            padding-bottom: 10px;
+            justify-content: center;
+            
+        }
+
+
+    
+}
